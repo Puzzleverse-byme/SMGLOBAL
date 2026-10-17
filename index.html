@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SM GLOBAL | Elegance • Quality • Trust</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0c0b09;--ink:#1a1814;--white:#ffffff;--ivory:#faf8f4;--gold:#c9a24b;--gold-d:#9c7a2c;--line:#e6dfcf;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--white);color:var(--ink);font-family:'Jost',system-ui,sans-serif;font-weight:300;line-height:1.65}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.1}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--black);border-bottom:1px solid #2a261d;display:flex;align-items:center;gap:28px;padding:14px 5vw;overflow-x:auto;white-space:nowrap}
+nav .logo{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:22px;color:var(--gold);margin-right:auto}
+nav a{color:#d8d2c3;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{background:var(--black);color:var(--white);text-align:center;padding:14vh 6vw 12vh;position:relative}
+.hero::before{content:"";position:absolute;inset:22px;border:1px solid var(--gold);opacity:.45;pointer-events:none}
+.mono{font-family:'Cormorant Garamond',serif;font-size:clamp(90px,22vw,200px);font-weight:500;color:var(--gold);line-height:.9;letter-spacing:.04em}
+.hero h1{font-size:clamp(34px,7vw,64px);letter-spacing:.18em;margin-top:10px}
+.hero p{color:#cfc8b6;font-size:clamp(16px,2.4vw,20px);letter-spacing:.14em;margin:18px 0 34px}
+.btn{display:inline-block;padding:13px 30px;background:var(--gold);color:var(--black);font-weight:500;font-size:15px;border:1px solid var(--gold);cursor:pointer;font-family:inherit;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn.dark{background:var(--black);color:var(--gold);border-color:var(--black)}
+.btn.dark:hover{background:var(--gold);color:var(--black);border-color:var(--gold)}
+section{padding:80px 6vw}
+.wrap{max-width:1100px;margin:0 auto}
+h2{font-size:clamp(32px,5vw,48px);margin-bottom:10px}
+.rule{width:56px;height:2px;background:var(--gold);margin:14px 0 30px}
+.about{background:var(--ivory)}
+.about .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center}
+.about p{max-width:60ch;font-size:17px}
+.founder{background:var(--black);color:var(--white);padding:36px;border-top:3px solid var(--gold)}
+.founder b{display:block;font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--gold);font-weight:600}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:10px}
+.cats a{border:1px solid var(--line);padding:24px;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;background:var(--white)}
+.cats a:hover{border-color:var(--gold);background:var(--ivory)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px}
+.card{border:1px solid var(--line);background:var(--white);display:flex;flex-direction:column}
+.pic{aspect-ratio:1/1;background:linear-gradient(135deg,#14120e,#2b251a);display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:56px;color:var(--gold);border-bottom:2px solid var(--gold)}
+.card .body{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:22px}
+.card p{margin:0;font-size:14px;color:#5b564a}
+.price{font-size:14px;color:var(--gold-d);font-weight:500}
+.card .btn{margin-top:auto;text-align:center;font-size:14px;padding:11px 12px}
+.card .tag{align-self:flex-start;font-size:12px;background:var(--gold);color:var(--black);padding:2px 10px}
+.dark-sec{background:var(--black);color:var(--white)}
+.dark-sec .card{background:var(--ink);border-color:#2f2a1f}
+.dark-sec .card p{color:#b9b2a0}
+.alt{background:var(--ivory)}
+.contact{background:var(--black);color:var(--white);text-align:center}
+.contact .rule{margin-left:auto;margin-right:auto}
+.contact p{max-width:52ch;margin:0 auto 26px;color:#d3ccba}
+.contact .handle{font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold);display:block;margin-bottom:24px}
+footer{background:#000;color:#8f8872;text-align:center;padding:24px;font-size:13px}
+@media(max-width:760px){.about .wrap{grid-template-columns:1fr}section{padding:60px 6vw}nav{gap:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<nav>
+<a class="logo" href="#home">SM GLOBAL</a>
+<a href="#about">About</a><a href="#jewelry">Jewelry</a><a href="#cosmetics">Cosmetics</a><a href="#clothing">Clothing</a><a href="#accessories">Accessories</a><a href="#new">New Arrivals</a><a href="#contact">Contact</a>
+</nav>
+
+<header class="hero" id="home">
+<div class="mono">SM</div>
+<h1>SM GLOBAL</h1>
+<p>Elegance • Quality • Trust</p>
+<a class="btn" href="#new">Shop New Arrivals</a>
+</header>
+
+<section class="about" id="about">
+<div class="wrap">
+<div>
+<h2>About SM Global</h2><div class="rule"></div>
+<p>SM Global brings carefully chosen jewelry, cosmetics, clothing and accessories to your doorstep. Every piece is picked for its finish, its feel and its value, so you can order with confidence.</p>
+<p>Ordering is simple and private: pick a product, tap DM to Order, and send us a message on Instagram.</p>
+</div>
+<div class="founder"><b>Sobia Mari</b>Founder &amp; CEO<br><br>Elegance • Quality • Trust</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>Shop by category</h2><div class="rule"></div>
+<div class="cats">
+<a href="#jewelry">💎 Jewelry</a><a href="#cosmetics">💄 Cosmetics</a><a href="#clothing">👗 Clothing</a><a href="#accessories">✨ Accessories</a>
+</div>
+</div>
+</section>
+
+<section id="jewelry" class="alt"><div class="wrap"><h2>💎 Jewelry</h2><div class="rule"></div><div class="grid" data-cat="Jewelry"></div></div></section>
+<section id="cosmetics"><div class="wrap"><h2>💄 Cosmetics</h2><div class="rule"></div><div class="grid" data-cat="Cosmetics"></div></div></section>
+<section id="clothing" class="alt"><div class="wrap"><h2>👗 Clothing</h2><div class="rule"></div><div class="grid" data-cat="Clothing"></div></div></section>
+<section id="accessories"><div class="wrap"><h2>✨ Accessories</h2><div class="rule"></div><div class="grid" data-cat="Accessories"></div></div></section>
+
+<section id="new" class="dark-sec"><div class="wrap"><h2>New Arrivals</h2><div class="rule"></div><div class="grid" data-new="1"></div></div></section>
+
+<section class="contact" id="contact">
+<h2>Order on Instagram</h2><div class="rule"></div>
+<a class="handle" href="https://instagram.com/itsmetobu709" target="_blank" rel="noopener">@itsmetobu709</a>
+<p>Choose your product, tap DM to Order, and send us a message. We reply with price, availability and delivery details.</p>
+<a class="btn" href="https://instagram.com/itsmetobu709" target="_blank" rel="noopener">Order on Instagram</a>
+</section>
+
+<footer>© 2026 SM GLOBAL · Founder: Sobia Mari</footer>
+
+<script>
+var IG="https://instagram.com/itsmetobu709";
+var P=[
+["Jewelry","Gold-Tone Necklace","Delicate layered chain","💎",1],
+["Jewelry","Pearl Drop Earrings","Classic evening pair","💎",0],
+["Jewelry","Stone Ring","Adjustable statement ring","💎",0],
+["Jewelry","Bracelet Set","Stackable, set of three","💎",0],
+["Cosmetics","Matte Lipstick","Long-wear everyday shade","💄",1],
+["Cosmetics","Glow Highlighter","Soft golden shimmer","💄",0],
+["Cosmetics","Eyeshadow Palette","Warm neutral tones","💄",0],
+["Cosmetics","Skincare Set","Cleanse and hydrate","💄",0],
+["Clothing","Embroidered Kurti","Soft fabric, easy fit","👗",1],
+["Clothing","Formal Abaya","Elegant flowing cut","👗",0],
+["Clothing","Casual Co-ord Set","Comfortable two-piece","👗",0],
+["Clothing","Silk Scarf Dupatta","Light and graceful","👗",0],
+["Accessories","Leather Handbag","Roomy with gold hardware","✨",1],
+["Accessories","Statement Watch","Slim black and gold dial","✨",0],
+["Accessories","Hair Clip Set","Pearl and gold finish","✨",0],
+["Accessories","Sunglasses","UV protected frames","✨",0]
+];
+function card(p,showCat){
+ var tag=p[4]?'<span class="tag">New</span>':'';
+ var d=document.createElement('div');d.className='card';
+ d.innerHTML='<div class="pic">'+p[3]+'</div><div class="body">'+tag+'<h3></h3><p></p><div class="price"></div><a class="btn dark" target="_blank" rel="noopener">DM to Order</a><a class="btn" target="_blank" rel="noopener">Order on Instagram</a></div>';
+ d.querySelector('h3').textContent=p[1];
+ d.querySelector('p').textContent=p[2];
+ d.querySelector('.price').textContent=(showCat?p[0]+' · ':'')+'Price on DM';
+ var a=d.querySelectorAll('a');
+ a[0].href=IG;a[1].href=IG;
+ return d;
+}
+document.querySelectorAll('.grid').forEach(function(g){
+ var c=g.getAttribute('data-cat'),n=g.getAttribute('data-new');
+ P.forEach(function(p){
+  if(n){if(p[4])g.appendChild(card(p,true))}
+  else if(p[0]===c)g.appendChild(card(p,false));
+ });
+});
+</script>
+</body>
+</html>
